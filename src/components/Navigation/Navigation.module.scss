@@ -1,0 +1,49 @@
+.menu{
+  position: absolute;
+  z-index: 1000;
+  width: 146px;
+  height: 100%;
+  background: url("./../../img/background_menu.jpg") center no-repeat;
+  background-position-y: -458px;
+  &_logo{
+    display: block;
+    margin: 20px auto;
+    width: 216px;
+    height: 98px;
+    opacity: 0;
+  }
+  &_nav{
+    list-style-type: none;
+    margin: 68px auto;
+    padding: 0;
+    width: 80%;
+    &_el{
+      display: flex;
+      width: 100%;
+      align-items: center;
+      margin-top: 49px;
+      cursor: pointer;
+      &_icon{
+        width: 40px;
+        height: 40px;
+        display: block;
+      }
+      &_text{
+        margin-left: 30px;
+        font-weight: normal;
+        font-size: 24px;
+        color: black;
+        opacity: 0;
+      }
+      &__colorGreen{
+        color: #054920;
+      }
+      &__colorBlue{
+        color: #002762;
+      }
+      &__colorRed{
+        color: #850000;
+      }
+    }
+  }
+}
