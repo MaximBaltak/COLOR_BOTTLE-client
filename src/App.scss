@@ -1,7 +1,31 @@
-.animation{
+@mixin desktopHd() {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin tablets() {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin phones() {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+
+.animation {
   z-index: -1;
   height: 100%;
-  .circle-1{
+  .circle-1 {
     position: absolute;
     width: 20px;
     height: 20px;
@@ -10,46 +34,46 @@
 
     animation: circle1 15s alternate infinite ease-in;
   }
-  .circle-2{
+  .circle-2 {
     animation: circle2 16s alternate infinite ease-in;
   }
-  .circle-3{
+  .circle-3 {
     animation: circle3 17s alternate infinite ease-in;
   }
-  .circle-4{
+  .circle-4 {
     animation: circle4 15s alternate infinite ease-in;
   }
-  .circle-5{
+  .circle-5 {
     animation: circle5 15s alternate infinite ease-in;
   }
-  .circle-6{
+  .circle-6 {
     animation: circle6 15s alternate infinite ease-in;
   }
-  .circle-7{
+  .circle-7 {
     animation: circle7 15s alternate infinite ease-in-out;
   }
-  .circle-8{
+  .circle-8 {
     animation: circle8 15s alternate infinite ease-in-out;
   }
-  .circle-9{
+  .circle-9 {
     animation: circle9 15s alternate infinite ease-in-out;
   }
 }
 @keyframes circle1 {
-  0%{
+  0% {
     opacity: 0;
     top: 10%;
     left: 10%;
     background: #05336e;
   }
-  50%{
+  50% {
     opacity: 1;
     top: 89%;
     left: 87%;
     transform: translate(50% 5%);
     background: #386e05;
   }
-  100%{
+  100% {
     opacity: 1;
     top: 56%;
     left: 8%;
@@ -58,20 +82,19 @@
   }
 }
 @keyframes circle2 {
-  0%{
+  0% {
     top: 45%;
     left: 45%;
     transform: translate(10% 91%);
     background: #05336e;
   }
-  50%{
+  50% {
     top: 78%;
     left: 12%;
     transform: translate(0% 7%);
     background: #154240;
   }
-  100%{
-
+  100% {
     top: 69%;
     left: 2%;
     transform: translate(100% 100%);
@@ -79,20 +102,20 @@
   }
 }
 @keyframes circle3 {
-  0%{
+  0% {
     opacity: 1;
     top: 90%;
     left: 90%;
     transform: translate(45% 12%);
     background: #05336e;
   }
-  50%{
+  50% {
     top: 36%;
     left: 48%;
     transform: translate(12% 7%);
     background: #154240;
   }
-  100%{
+  100% {
     opacity: 0;
     top: 23%;
     left: 91%;
@@ -101,19 +124,19 @@
   }
 }
 @keyframes circle4 {
-  0%{
+  0% {
     top: 4%;
     left: 8%;
     transform: translate(45% 12%);
     background: #05336e;
   }
-  50%{
+  50% {
     top: 91%;
     left: 54%;
     transform: translate(12% 7%);
     background: #154240;
   }
-  100%{
+  100% {
     top: 23%;
     left: 9%;
     transform: translate(1% 0%);
@@ -121,20 +144,20 @@
   }
 }
 @keyframes circle5 {
-  0%{
+  0% {
     opacity: 0;
     top: 8%;
     left: 36%;
     transform: translate(45% 12%);
     background: #05336e;
   }
-  50%{
+  50% {
     top: 68%;
     left: 48%;
     transform: translate(12% 7%);
     background: #154240;
   }
-  100%{
+  100% {
     opacity: 1;
     top: 2%;
     left: 11%;
@@ -143,19 +166,19 @@
   }
 }
 @keyframes circle6 {
-  0%{
+  0% {
     top: 10%;
     left: 0;
     transform: translate(45% 12%);
     background: #05336e;
   }
-  50%{
+  50% {
     top: 6%;
     left: 47%;
     transform: translate(12% 7%);
     background: #154240;
   }
-  100%{
+  100% {
     top: 3%;
     left: 1%;
     transform: translate(1% 0%);
@@ -163,20 +186,20 @@
   }
 }
 @keyframes circle7 {
-  0%{
+  0% {
     opacity: 1;
     top: 71%;
     left: 12%;
     transform: translate(45% 12%);
     background: #05336e;
   }
-  50%{
+  50% {
     top: 3%;
     left: 4%;
     transform: translate(12% 7%);
     background: #154240;
   }
-  100%{
+  100% {
     opacity: 0;
     top: 13%;
     left: 83%;
@@ -185,19 +208,19 @@
   }
 }
 @keyframes circle8 {
-  0%{
+  0% {
     top: 0;
     left: 0;
     transform: translate(45% 12%);
     background: #05336e;
   }
-  50%{
+  50% {
     top: 73%;
     left: 29%;
     transform: translate(12% 7%);
     background: #154240;
   }
-  100%{
+  100% {
     top: 2%;
     left: 1%;
     transform: translate(1% 0%);
@@ -205,20 +228,20 @@
   }
 }
 @keyframes circle9 {
-  0%{
+  0% {
     opacity: 0;
     top: 19%;
     left: 50%;
     transform: translate(45% 12%);
     background: #05336e;
   }
-  50%{
+  50% {
     top: 91%;
     left: 91%;
     transform: translate(12% 7%);
     background: #154240;
   }
-  100%{
+  100% {
     opacity: 1;
     top: 78%;
     left: 4%;
@@ -226,7 +249,3 @@
     background: #010e1f;
   }
 }
-
-
-
-

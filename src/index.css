@@ -1,15 +1,16 @@
-html{
+/* @import "~normalize.css/normalize.css"; */
+
+html {
   height: 100%;
 }
 body {
-  padding: 0;
-  margin: 0;
   height: 100%;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-#root{
+#root {
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
