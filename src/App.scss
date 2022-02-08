@@ -1,3 +1,11 @@
+
+$mainBgColor: #8b0808;
+$decorColor: #002762;
+$errorColor: #fe0000;
+$correctColor: #00c228;
+$grayColor: #646464;
+$darkGrayColor: #2e2e2e;
+
 @mixin desktopHd() {
   @media screen and (min-width: 1600px) {
     @content;
@@ -21,6 +29,49 @@
     @content;
   }
 }
+
+@mixin edit($fill: $grayColor, $size: 21, $right: -10px, $bottom: -10px) {
+  position: absolute;
+  bottom: $bottom;
+  right: $right;
+  border-radius: 50%;
+  background-color: rgba(white, 0.8);
+  box-shadow: 2px 2px 6px 0px rgba($fill, 0.8);
+
+  height: ($size + 2) + px;
+  width: ($size + 2) + px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  & svg {
+    max-width: 90%;
+    max-height: 90%;
+    fill: $fill;
+    padding: 3px;
+  }
+}
+
+@mixin sign($fill: white, $bgColor: $grayColor, $size: 21) {
+  border-radius: 50%;
+  background-color: $bgColor;
+  height: ($size + 2) + px;
+  width: ($size + 2) + px;
+  min-width: ($size + 2) + px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & svg {
+    max-width: 90%;
+    max-height: 90%;
+    fill: $fill;
+    stroke: $fill;
+    padding: 3px;
+  }
+}
+
 
 .animation {
   z-index: -1;
