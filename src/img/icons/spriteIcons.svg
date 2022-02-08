@@ -21,7 +21,12 @@
 	<path d="M1 1L7 7M7 1L1 7" stroke="#860101"/>
 </symbol>
 <symbol id="validate_yes">
-	<path d="M1 3.625L3.86364 8L10 1" stroke="#107100" stroke-linecap="square"/>
+	<path d="M1 3.625L3.86364 8L10 1" stroke="#107100" stroke-linecap="square" fill="none"/>
+</symbol>
+<symbol id="show_password">
+	<path d="M0 2.95861C4.76174 6.76893 7.34922 6.7941 12 2.95861C7.38474 -1.02907 4.71772 -0.943054 0 2.95861Z" fill="#7B7B7B"/>
+	<circle cx="6" cy="3" r="2" fill="white"/>
+	<path d="M7 3C7 3.55228 6.55228 4 6 4C5.44772 4 5 3.55228 5 3C5 2.44772 5.44772 2 6 2C6.55228 2 7 2.44772 7 3Z" fill="#7B7B7B"/>
 </symbol>
 </defs>
 </svg>
