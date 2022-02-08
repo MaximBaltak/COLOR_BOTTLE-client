@@ -1,4 +1,12 @@
-html{
+/* @import "~normalize.css/normalize.css"; */
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
   height: 100%;
 }
 body {
@@ -6,10 +14,10 @@ body {
   margin: 0;
   height: 100%;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-#root{
+#root {
   height: 100%;
 }
