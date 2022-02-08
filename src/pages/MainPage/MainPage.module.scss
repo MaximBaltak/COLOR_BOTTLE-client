@@ -1,20 +1,36 @@
-.main{
-  padding-top: 100px;
-  margin: 0 auto;
-  width: 600px;
-  &_logo{
+@import "../../App.scss";
+
+.main {
+  flex-grow: 1;
+  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include tablets {
+    padding-left: 146px;
+  }
+
+  &_logo {
     display: block;
     margin: 0 auto;
-    width: 508px;
-    height: 226px;
+    width: 80%;
   }
-  &_desc{
-    width: 100%;
+  &_desc {
     font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 20px;
+    line-height: 24px;
     text-align: center;
     color: #000000;
-    margin-top: 100px;
+    margin-top: 80px;
+    width: 80%;
+
+    @include tablets {
+      width: 90%;
+      margin-top: 100px;
+      font-size: 24px;
+      line-height: 28px;
+    }
   }
 }
