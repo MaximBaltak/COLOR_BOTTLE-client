@@ -24,7 +24,7 @@ const Input: React.FC<{type: String; picture: String; val: any}> = ({
         ].join(" ")}
       >
         <svg>
-          <use xlinkHref={`${svgSprite}#${picture}`}></use>
+          <use xlinkHref={`${svgSprite}#${picture}`}/>
         </svg>
       </span>
     </div>
