@@ -1,28 +1,36 @@
-import React, {useState} from 'react';
-import styles from './InputForm.module.scss'
-import SvgSprite from './../../img/icons/spriteIcons.svg'
-interface IinputFromProps{
-    type:string,
-    placeholder:string
-}
-const InputForm: React.FC<IinputFromProps> = ({type,placeholder}) => {
-    const [typePassword,setTypePassword]=useState<string>('password')
-    const show=()=>{
-        if(typePassword==='password'){
-            setTypePassword('text')
-        }else {
-            setTypePassword('password')
-        }
-    }
-    return(
-        type==='password'?<div className={styles.wrapper}>
-            <input className={styles.input} type={typePassword} placeholder='Пароль'/>
-            <svg className={styles.show} onClick={show}>
-                <use xlinkHref={`${SvgSprite}#show_password`}/>
-            </svg>
-        </div>:<input className={styles.input} type={type} placeholder={placeholder}/>
+import React, {useState} from "react";
+import styles from "./InputForm.module.scss";
+import SvgSprite from "./../../img/icons/spriteIcons.svg";
 
-    );
+interface InputFromProps {
+  type: string;
+  placeholder: string;
+}
+
+const InputForm: React.FC<InputFromProps> = ({type, placeholder}) => {
+  const [typePassword, setTypePassword] = useState<boolean>(true);
+
+  return type === "password" ? (
+    <div className={styles.inputform}>
+      <input
+        className={styles.inputform__field}
+        type={typePassword ? "password" : "text"}
+        placeholder="Пароль"
+      />
+      <svg
+        className={styles.inputform__showtoggler}
+        onClick={() => setTypePassword(!typePassword)}
+      >
+        <use xlinkHref={`${SvgSprite}#show_password`} />
+      </svg>
+    </div>
+  ) : (
+    <input
+      className={styles.inputform__field}
+      type={type}
+      placeholder={placeholder}
+    />
+  );
 };
 
 export default InputForm;
