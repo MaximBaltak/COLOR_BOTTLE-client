@@ -1,0 +1,28 @@
+.wrapper{
+  position: relative;
+  .show{
+    width: 12px;
+    height: 5.83px;
+    transform: translate(200px,-40px);
+    cursor: pointer;
+  }
+}
+.input{
+  width: 233px;
+  height: 61px;
+  background: #FFFFFF;
+  border: 1px solid rgba(166, 166, 166, 0.44);
+  box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.25);
+  border-radius: 11px;
+  padding: 23px;
+  outline: none;
+  font-weight: normal;
+  font-size: 14px;
+  color: #000000;
+  &::placeholder{
+    font-weight: inherit;
+    font-size: inherit;
+    color: #939393;
+  }
+}
+

@@ -1,0 +1,65 @@
+@import "./../../App";
+.form{
+  width: 340px;
+  margin: 90px auto;
+  &__error{
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: $mainBgColor;
+    margin: 0;
+  }
+  &_wrapper{
+    margin: 30px auto;
+    &_align{
+      margin: 0 auto;
+      width: 233px;
+    }
+   &_errors{
+     list-style-type: none;
+     padding: 0;
+     width: 130px;
+     margin: 11px auto;
+     &__el{
+       width: 100%;
+       margin-top: 5px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       svg{
+         width: 9px;
+         height: 9px;
+       }
+       p{
+         font-weight: normal;
+         font-size: 9px;
+         text-align: center;
+         color: $mainBgColor;
+       }
+     }
+   }
+  }
+  &_wrapperButton{
+    margin: 30px auto;
+    width: 233px;
+  }
+  &_buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    hr{
+      background: #5C5C5C;
+      width: 2px;
+      height: 31px;
+      margin: 0;
+    };
+    p{
+      font-weight: 300;
+      font-size: 14px;
+      color: #136487;
+      cursor: pointer;
+    }
+  }
+}
