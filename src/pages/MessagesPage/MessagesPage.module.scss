@@ -1,0 +1,69 @@
+.background{
+  margin: 0 auto;
+  width: 1000px;
+  height: 100%;
+  background: #ffffff;
+  &__count{
+    font-weight: normal;
+    font-size: 24px;
+    color: #000000;
+    span{
+      color: #EB651A;
+    }
+  }
+  &_buttons{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    &_button{
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      outline: none;
+      border: none;
+      background: none;
+      cursor: pointer;
+      transition: all .2s;
+      &:hover{
+        transform: scale(1.1) translate(5px,-5px);
+      }
+      &__icon{
+        width: 17px;
+        height: 17px;
+      }
+      &__text{
+        display: block;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #C87800;
+        margin: 0 0 0 10px;
+        span{
+        color:  #02A6EC;
+        }
+      }
+      &_all{
+        position: absolute;
+        transform: translate(50px, 19px);
+        color:  rgba(255, 0, 0, 0.59);
+      }
+      &_textRedColor{
+        color: #FF0000;
+      }
+    }
+  }
+  &_list{
+    list-style-type: none;
+    padding: 0;
+    width: 553px;
+    height: 1000px;
+    margin: 40px auto;
+    overflow: auto;
+    &::-webkit-scrollbar{
+      width: 0;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.message{
+  width: 90%;
+  min-height: 100px;
+  background: #FFFFFF;
+  box-shadow: 9px 10px 55px rgba(235, 101, 26, 0.25);
+  border-radius: 49px;
+  padding: 11px 24px;
+  margin: 40px auto;
+  &__date{
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.28);
+    margin: 0;
+  }
+  &__title{
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000;
+    margin: 5px 0 0;
+  }
+  &__text{
+    width: 100%;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #636262;
+    margin-top: 35px;
+  }
+}

@@ -5,15 +5,21 @@ import Navigation from "./components/Navigation/Navigation";
 import MainPage from "./pages/MainPage/MainPage";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
 import AuthorizationPage from "./pages/AuthorizationPage/AuthorizationPage";
+import MessagesPage from "./pages/MessagesPage/MessagesPage";
+import NotFound from "./pages/NotFoundPage/NotFound";
+import ConfirmPage from "./pages/ConfirmPage/ConfirmPage";
 
 function App() {
   return (
     <>
       <Navigation />
-      {/* <Animation /> */}
+       <Animation />
       {/* <MainPage /> */}
       {/*<ProfilePage />*/}
-        <AuthorizationPage/>
+      {/*  <AuthorizationPage/>
+      {/*  <MessagesPage/>*/}
+      {/*  <NotFound/>*/}
+        <ConfirmPage/>
     </>
   );
 }

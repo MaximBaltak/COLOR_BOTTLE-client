@@ -1,0 +1,65 @@
+.background {
+  margin: 0 auto;
+  width: 1000px;
+  height: 100%;
+  background: #FFFFFF;
+
+  &_title {
+    margin: 62px 0 0;
+    font-weight: bold;
+    font-size: 48px;
+    text-align: center;
+    color: #000000;
+  }
+
+  &_desc {
+    margin: 140px auto 0;
+    width: 556px;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+  }
+
+  &_timer {
+    margin-top: 41px;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    color: #000000;
+  }
+
+  &_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 44px auto 0;
+    width: 301px;
+
+    &__confirm {
+      display: block;
+      font-weight: bold;
+      font-size: 18px;
+      outline: none;
+      background: none;
+      border: none;
+      color: rgba(4, 107, 27, 0.38);
+      cursor: pointer;
+      margin-left: 20px;
+    }
+  }
+
+  &_error {
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: #EA4F4F;
+    margin-top: 10px;
+  }
+
+  &_send {
+    margin: 79px auto 0;
+    width:  250px;
+  }
+}

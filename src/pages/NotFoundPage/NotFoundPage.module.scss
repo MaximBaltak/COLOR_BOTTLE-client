@@ -1,0 +1,11 @@
+.container{
+  margin: 200px auto;
+  &__text{
+    display: block;
+    margin-top: 23px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 96px;
+    color: #FF5E5E;
+  }
+}
